@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary: rgb(233, 58, 27);
+  --secondary: #0e0e0e;
+  --text-primary: #f32d2d;
+  --text-secondary: blue;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #303030;
+}
+
+header {
+  background-color: #131313;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+header h1{
+  color: #f32d2d;
+}
+.section-filters {
+  padding: 1rem 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-search {
+  border-radius: 30px;
+  width: 200px;
+  height: 30px;
+  display: flex;
+}
+
+.input-search input {
+  flex: 1;
+  outline: none;
+  border: 1px solid black;
+}
+
+.input-search input:focus {
+  border: 1px solid blue;
+}
+
+.container-paises {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-pais {
+  background-color: #131313;
+  color: #ccc;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .25);
+  text-decoration: none;
+}
+
+.card-pais p {
+  margin: 8px 0;
+}
+
+.card-pais figure {
+  margin: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.card-pais figure img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.card-pais h3{
+  color: #fa0303;
+  text-align: center;
+}
+.back{
+  display: block;
+  color: white;
+  font-weight: bold;
+  margin: 1rem ;
+}
+.card-info-pais{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+  gap: 1rem;
+}
+
+
+.card-info-pais figure{
+  margin: 0;
+}
+.card-info-pais figure img{
+  border: 1px solid #ccc;
+}
+.card-info-pais h3{
+  color: #f32d2d;
+}
+.card-info-pais  p{
+  color: #ccc;
+}
+.maps{
+  padding: .5rem 1rem;
+  text-decoration: none;
+  color: #f32d2d;
+  border: 1px solid #fa0303;
+  border-radius: 20px;
+}
+.maps:hover{
+  font-weight: bold;
+  background-color: #f32d2d;
+  color: #ccc;
+}
+/*ERROR*/
+.error-page{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
